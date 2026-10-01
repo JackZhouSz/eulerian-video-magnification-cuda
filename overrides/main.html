@@ -61,10 +61,9 @@
   </script>
   {%- endif %}
 
-  {#- Google Search Console verification. To turn it on: add the property at
-      https://search.google.com/search-console (URL-prefix type, the Pages
-      URL above), choose the "HTML tag" method, paste the tag's content value
-      below in place of the placeholder, and deploy. Until then this stays a
-      comment and renders nothing. -#}
-  {#- <meta name="google-site-verification" content="PASTE-THE-CODE-FROM-SEARCH-CONSOLE-HERE"> -#}
+  {#- Google Search Console verification for this site's URL-prefix property.
+      Google re-checks the tag on the live page from time to time: if it ever
+      comes out, the property drops to unverified and stops collecting data,
+      so it stays even though it looks like it does nothing. -#}
+  <meta name="google-site-verification" content="qMk1KayANiBiYLq80eAlawnnd_0xIlg92Is6QHT6yIQ">
 {% endblock %}
