@@ -1,4 +1,4 @@
-# vidmag
+# Eulerian Video Magnification
 
 **Amplify changes in a video that are too small to see** — the flush of blood
 through a face with each heartbeat, the millimetre rise of a sleeping child's
@@ -45,11 +45,11 @@ amplified = vidmag.magnify(frames, preset="motion")
 |---|---|
 | Install it | [Installing](getting-started/install.md) |
 | See it work on a real clip | [First result](getting-started/first-result.md) |
-| Make a pulse visible | [See a pulse](recipes/pulse.md) |
-| Measure a vibrating object | [Measure vibration](recipes/vibration.md) |
-| Amplify small movements | [Amplify motion](recipes/motion.md) |
+| Make a pulse visible | [Heart rate from video](recipes/pulse.md) |
+| Measure a vibrating object | [Measure vibration from video](recipes/vibration.md) |
+| Amplify small movements | [Motion magnification](recipes/motion.md) |
 | Build past the presets | [Use the building blocks](recipes/building-blocks.md) |
-| Understand the method | [How it works](concepts/how-it-works.md) |
+| Understand the method | [How Eulerian Video Magnification works](concepts/how-it-works.md) |
 | Pick a backend | [Backends and hardware](concepts/backends.md) |
 
 ## Why it is built this way

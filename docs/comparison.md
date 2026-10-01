@@ -1,4 +1,4 @@
-# Compared with other implementations
+# Eulerian Video Magnification implementations, compared
 
 Several implementations of this method exist. This says plainly what is
 different about this one, including where another is the better choice.

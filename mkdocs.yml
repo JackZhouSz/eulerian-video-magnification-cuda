@@ -80,23 +80,23 @@ nav:
       - Installing: getting-started/install.md
       - First result: getting-started/first-result.md
   - How to:
-      - See a pulse: recipes/pulse.md
-      - Measure vibration: recipes/vibration.md
-      - Amplify motion: recipes/motion.md
+      - Heart rate from video: recipes/pulse.md
+      - Vibration from video: recipes/vibration.md
+      - Motion magnification: recipes/motion.md
       - Magnify a live feed: recipes/streaming.md
       - Use the building blocks: recipes/building-blocks.md
   - Understanding:
-      - How it works: concepts/how-it-works.md
+      - How Eulerian Video Magnification works: concepts/how-it-works.md
       - Choosing parameters: concepts/parameters.md
       - What can go wrong: concepts/pitfalls.md
-      - Phase-based magnification: concepts/phase-based.md
+      - Phase-based motion magnification: concepts/phase-based.md
       - Backends and hardware: concepts/backends.md
   - Reference:
       - Entry point: reference/api.md
       - Building blocks: reference/ops.md
       - Command line: reference/cli.md
   - Performance: performance.md
-  - Compared with other implementations: comparison.md
+  - Eulerian Video Magnification implementations, compared: comparison.md
   - Project:
       - Licence and citation: licence.md
       - What will not break: stability.md

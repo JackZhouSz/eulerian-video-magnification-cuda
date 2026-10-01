@@ -1,4 +1,4 @@
-# vidmag
+# vidmag — Eulerian Video Magnification
 
 **See what's too small to see: a pulse in a face, a sleeping child's breathing,
 a guitar string's vibration.** [Eulerian Video

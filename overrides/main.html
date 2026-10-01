@@ -6,9 +6,21 @@
 -#}
 {% extends "base.html" %}
 
+{#- Material titles the homepage with the site name alone; this gives it the
+    phrase people actually search for instead. -#}
+{% block htmltitle %}
+  {%- if page and page.is_homepage %}
+    <title>Eulerian Video Magnification - {{ config.site_name }}</title>
+  {%- else %}
+    {{ super() }}
+  {%- endif %}
+{% endblock %}
+
 {% block extrahead %}
   {%- set image = config.site_url ~ "img/social_preview.png" -%}
-  {%- if page and page.title and not page.is_homepage -%}
+  {%- if page and page.is_homepage -%}
+    {%- set og_title = "Eulerian Video Magnification - " ~ config.site_name -%}
+  {%- elif page and page.title and page.title != config.site_name -%}
     {%- set og_title = page.title ~ " - " ~ config.site_name -%}
   {%- else -%}
     {%- set og_title = config.site_name -%}
@@ -25,4 +37,34 @@
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ config.site_description }}">
   <meta name="twitter:image" content="{{ image }}">
+
+  {#- Structured data, homepage only: tells a search engine that this site is
+      a tool, what its brand name is, and — in alternateName — the name people
+      actually search for. Kept to the homepage so it is emitted exactly once;
+      Google treats a repeated SoftwareApplication block as duplication. -#}
+  {%- if page and page.is_homepage %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": {{ config.site_name | tojson }},
+      "alternateName": "Eulerian Video Magnification",
+      "description": {{ config.site_description | tojson }},
+      "applicationCategory": "MultimediaVideoApplication",
+      "operatingSystem": "Linux, macOS",
+      "programmingLanguage": ["Python", "C++", "CUDA"],
+      "isAccessibleForFree": true,
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+      "url": {{ config.site_url | tojson }},
+      "codeRepository": {{ config.repo_url | tojson }}
+    }
+  </script>
+  {%- endif %}
+
+  {#- Google Search Console verification. To turn it on: add the property at
+      https://search.google.com/search-console (URL-prefix type, the Pages
+      URL above), choose the "HTML tag" method, paste the tag's content value
+      below in place of the placeholder, and deploy. Until then this stays a
+      comment and renders nothing. -#}
+  {#- <meta name="google-site-verification" content="PASTE-THE-CODE-FROM-SEARCH-CONSOLE-HERE"> -#}
 {% endblock %}

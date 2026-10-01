@@ -1,4 +1,4 @@
-# Phase-based magnification
+# Phase-based motion magnification
 
 A second way to amplify motion, from the 2013 follow-up to the original paper.
 Both make small movement visible; they differ in what they amplify, and the

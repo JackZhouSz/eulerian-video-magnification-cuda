@@ -1,4 +1,4 @@
-# Amplify motion
+# Motion magnification
 
 Breathing, a structure settling, the small sway of something that looks still.
 The motion pipeline makes these visible by amplifying how much the picture's

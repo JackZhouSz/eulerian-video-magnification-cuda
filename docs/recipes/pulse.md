@@ -1,7 +1,9 @@
-# See a pulse
+# Heart rate from video
 
 Blood arriving in the skin with each heartbeat changes its colour by a fraction
-of one step in 255. The colour pipeline amplifies exactly that.
+of one step in 255. The colour pipeline amplifies exactly that, and reading the
+amplified change back is a way to estimate heart rate from video alone —
+remote photoplethysmography.
 
 ```python
 import vidmag

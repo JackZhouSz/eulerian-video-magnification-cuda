@@ -1,4 +1,4 @@
-# How it works
+# How Eulerian Video Magnification works
 
 One observation carries the whole method: to make a small change visible, you
 do not have to find what moved. Amplify how each part of the picture changes

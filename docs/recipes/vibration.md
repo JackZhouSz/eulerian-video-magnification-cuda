@@ -1,4 +1,4 @@
-# Measure vibration
+# Measure vibration from video
 
 A guitar string, a spinning machine, a bridge under load: all move by amounts
 too small to see, at frequencies far above anything a body does. The motion
